@@ -1,0 +1,73 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/main",
+			"style": {
+				"navigationBarTitleText": "维修管理",
+		        "enablePullDownRefresh": true
+			}
+		},
+        {
+        	"path": "pages/bindStaff/main",
+        	"style": {
+        		"navigationBarTitleText": "绑定员工"
+        	}
+        },
+        {
+			"path": "pages/repairAdd/main",
+			"style": {
+				"navigationBarTitleText": "新增维修"
+			}
+		},
+        {
+        	"path": "pages/repairDetail/main",
+        	"style": {
+        		"navigationBarTitleText": "维修详情"
+        	}
+        },
+        {
+        	"path": "pages/appraise/main",
+        	"style": {
+        		"navigationBarTitleText": "评价"
+        	}
+        }
+	],
+	"globalStyle": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "维修管理",
+		"navigationBarTextStyle": "black",
+        "usingComponents": {
+            "van-button": "/static/vant/button/index",
+            "van-divider": "/static/vant/divider/index",
+            "van-cell": "/static/vant/cell/index",
+            "van-radio": "/static/vant/radio/index",
+            "van-radio-group": "/static/vant/radio-group/index",
+            "van-picker": "/static/vant/picker/index",
+            "van-cell-group": "/static/vant/cell-group/index",
+            "van-popup": "/static/vant/popup/index",
+            "van-tab": "/static/vant/tab/index",
+            "van-tabs": "/static/vant/tabs/index",
+        	"van-toast": "/static/vant/toast/index",
+        	"van-grid": "/static/vant/grid/index",
+        	"van-grid-item": "/static/vant/grid-item/index",
+        	"van-image": "/static/vant/image/index",
+            "van-tabbar": "/static/vant/tabbar/index",
+            "van-tabbar-item": "/static/vant/tabbar-item/index",
+            "van-sticky": "/static/vant/sticky/index",
+            "van-icon": "/static/vant/icon/index",
+            "van-search": "/static/vant/search/index",
+            "van-uploader": "/static/vant/uploader/index",
+            "van-tag": "/static/vant/tag/index",
+            "van-dialog": "/static/vant/dialog/index",
+            "van-field": "/static/vant/field/index",
+            "van-rate": "/static/vant/rate/index"
+            // #ifdef  MP-WEIXIN 
+            // "txv-video": "plugin://tencentvideo/video"
+            // #endif
+        }
+	},
+    "networkTimeout": {
+        "request": 20000
+    }
+}
